@@ -21,8 +21,8 @@ class KtPagerAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
 
     override fun getPageTitle(position: Int) = "Kt$position"
 
+    // Comment out this block, avoid error
     override fun setPrimaryItem(container: ViewGroup, position: Int, any: Any) {
         super.setPrimaryItem(container, position, any)
-        print("setPrimaryItem called")
     }
 }
