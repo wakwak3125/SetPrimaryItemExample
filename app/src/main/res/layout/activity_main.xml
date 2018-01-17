@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.wakwak.setprimaryitemexample.RootActivity">
+
+    <Button
+        android:id="@+id/button_open_java"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Java implementation"
+        app:layout_constraintEnd_toEndOf="@+id/button_open_kotlin"
+        app:layout_constraintStart_toStartOf="@+id/button_open_kotlin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_open_kotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Kotlin implementation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_open_java" />
+
+</android.support.constraint.ConstraintLayout>
